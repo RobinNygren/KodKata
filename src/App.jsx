@@ -1,13 +1,17 @@
 import Header from "./components/Header/Header"
-function App() {
+import RepeatText from "./components/RepeatText/RepeatText";
+import List from "./components/List/List";
+const App = () => {
 
 
   return (
     <>
-     < Header />
      <h1>hejsan</h1>
+     <Header headerText="Steg 4 klart!" />
+     <RepeatText count ={7} text="en liten båt blir snabbt full"/>
+     <List animalArray={["ko", "häst", "hund", "giraff"]}/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
